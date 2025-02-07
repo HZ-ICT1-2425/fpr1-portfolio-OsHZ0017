@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Home page</title>
-    <link rel="stylesheet" href="/resources/css/base.css" type="text/css" />
-    <link rel="stylesheet" href="/resources/css/index.css" type="text/css" />
+    <link rel="stylesheet" href="css/base.css" type="text/css" />
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
 </head>
 
 <body>
-<script src="/resources/js/index.js"></script>
+<script src="nav.js"></script>
 <div id="navigation" class="header">
     <div class="logoDiv">
         <a target="_blank" href="https://www.suunn.nl"
