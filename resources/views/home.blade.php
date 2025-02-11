@@ -7,17 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Home page</title>
-    <link rel="stylesheet" href="css/base.css" type="text/css" />
-    <link rel="stylesheet" href="css/index.css" type="text/css" />
+    <link rel="stylesheet" href="{{asset('resources/css/base.css')}}" type="text/css" />
+    <link rel="stylesheet" href="{{asset('resources/css/index.css')}}" type="text/css" />
 </head>
 
 <body>
-<script src="nav.js"></script>
 <div id="navigation" class="header">
     <div class="logoDiv">
-        <a target="_blank" href="https://www.suunn.nl"
-        ><img class="logo" src="https://suunn.nl/images/r2d2.png"
-            /></a>
+        <a target="_blank" href="https://www.suunn.nl">
+            <img class="logo" src="https://suunn.nl/images/r2d2.png" alt="A picture of R2D2 that links to my
+            base website."/>
+        </a>
     </div>
     <nav>
         <a class="active" href="index.html">Home page</a>
