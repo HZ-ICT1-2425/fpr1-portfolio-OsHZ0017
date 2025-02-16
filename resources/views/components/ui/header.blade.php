@@ -1,3 +1,11 @@
-<div>
-    <!-- If you do not have a consistent goal in life, you can not live it in a consistent way. - Marcus Aurelius -->
+<div id="navigation" class="header">
+    <div class="logoDiv">
+        <a target="_blank" href="https://www.suunn.nl">
+            <img class="logo" src="https://suunn.nl/images/r2d2.png" alt="A picture of R2D2 that links to my
+            base website."/>
+        </a>
+    </div>
+    <x-ui.navbar>
+    </x-ui.navbar>
 </div>
+

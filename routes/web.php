@@ -19,5 +19,5 @@ Route::get('/faq', function () {
 })->name('Frequently asked Questions');
 
 Route::get('/blogs', function () {
-   return view('blog_home');
+    return view('blog_home');
 });

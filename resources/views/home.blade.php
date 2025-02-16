@@ -1,34 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Home Page of Mika's HZ project" />
-    <meta name="author" content="Mika van Os" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Home page</title>
-
-    @vite(['resources/css/base.css', 'resources/css/index.css'])
-
-</head>
-
-<body>
-<div id="navigation" class="header">
-    <div class="logoDiv">
-        <a target="_blank" href="https://www.suunn.nl">
-            <img class="logo" src="https://suunn.nl/images/r2d2.png" alt="A picture of R2D2 that links to my
-            base website."/>
-        </a>
-    </div>
-    <nav>
-        <a class="active" href="index.html">Home page</a>
-        <a class="inactive" href="profile.html">About me</a>
-        <a class="inactive" href="blog_home.html">Blog</a>
-        <a class="inactive" href="faq.html">FAQ</a>
-        <a class="inactive" href="dashboard.html">Dashboard</a>
-    </nav>
-</div>
-<main>
+<x-layout.main title="Home Page">
     <section>
         <aside>
             <div class="aside">
@@ -198,23 +168,21 @@
                     <strong>lot</strong> since then, but maybe a little?
                 </p>
                 <img
-                    src="media/suunn1.png"
+                    src="{{ url('storage/suunn1.png') }}"
                     class="suunn"
                     alt="A picture of the home screen of the website suunn.nl"
                 />
                 <img
-                    src="media/suunn2.png"
+                    src="{{ url('storage/suunn2.png') }}"
                     class="suunn"
                     alt="A picture of the 'hell' page of the website suunn.nl"
                 />
                 <img
-                    src="media/suunn3.png"
+                    src="{{ url('storage/suunn3.png') }}"
                     class="suunn"
                     alt="A picture of the Star Wars page of the website suunn.nl"
                 />
             </article>
         </div>
     </section>
-</main>
-</body>
-</html>
+</x-layout.main>
