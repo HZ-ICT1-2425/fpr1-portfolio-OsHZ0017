@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Home page</title>
-    <link rel="stylesheet" href="{{asset('resources/css/base.css')}}" type="text/css" />
-    <link rel="stylesheet" href="{{asset('resources/css/index.css')}}" type="text/css" />
+
+    @vite(['resources/css/base.css', 'resources/css/index.css'])
+
 </head>
 
 <body>
@@ -66,7 +67,7 @@
                         <a
                             target="_blank"
                             href="https://github.com/HZ-HBO-ICT"
-                        >HBO-ICT Github enviorment</a
+                        >HBO-ICT Github environment</a
                         >
                     </li>
                 </ul>
@@ -82,7 +83,7 @@
             <article>
                 <h3>
                     You are here, so you know
-                    <abbr title="Mika's :3">who</abbr> this website
+                    <abbr title="Mika :3">who</abbr> this website
                     belongs to.
                 </h3>
                 <p>
