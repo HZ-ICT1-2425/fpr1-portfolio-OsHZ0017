@@ -62,7 +62,7 @@ class BlogSeeder extends Seeder
                 </p>
                 <p>
                     <a
-                        href="https://www.roadtovr.com/microsoft-and-sony-join-other-industry-giants-in-support-of-openusd-standard/"
+           href="https://www.roadtovr.com/microsoft-and-sony-join-other-industry-giants-in-support-of-openusd-standard/"
                         target="_blank"
                     >Article Source</a
                     >
@@ -369,7 +369,7 @@ class BlogSeeder extends Seeder
      */
     public function run(): void
     {
-        foreach($this->data as $item) {
+        foreach ($this->data as $item) {
             Blog::create($item);
         }
     }
