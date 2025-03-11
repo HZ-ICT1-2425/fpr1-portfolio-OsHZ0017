@@ -1,34 +1,12 @@
-<!DOCTYPE html>
+@extends('layouts.main')
 
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Blog Page of Mika's HZ project" />
-    <meta name="author" content="Mika van Os" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Blog feed</title>
-    <link rel="stylesheet" href="./css/base.css" />
-    <link rel="stylesheet" href="./css/dashboard.css" />
-</head>
+@section('title', 'Dashboard')
 
-<body>
-<script src="./scripts/gradePass.js"></script>
-<div id="navigation" class="header">
-    <div class="logoDiv">
-        <a target="_blank" href="https://www.suunn.nl"
-        ><img class="logo" src="https://suunn.nl/images/r2d2.png"
-            /></a>
-    </div>
-    <nav>
-        <a class="inactive" href="index.html">Home page</a>
-        <a class="inactive" href="profile.html">About me</a>
-        <a class="inactive" href="blog_home.html">Blog</a>
-        <a class="inactive" href="faq.html">FAQ</a>
-        <a class="active" href="dashboard.html">Dashboard</a>
-    </nav>
-</div>
-<main>
+@section('css')
+    @vite(['resources/css/dashboard.css', 'resources/js/gradePass.js'])
+    @endsection
+
+@section('content')
     <section>
         <div class="aside">
             <h4>legend!</h4>
@@ -215,7 +193,8 @@
             </article>
         </div>
     </section>
-</main>
-<script src="scripts.js"></script>
-</body>
-</html>
+    @endsection
+
+@section('foot')
+    @vite('resources/js/gradePass.js')
+    @endsection

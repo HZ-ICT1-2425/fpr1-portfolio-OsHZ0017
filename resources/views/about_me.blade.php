@@ -1,33 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Home Page of Mika's HZ project" />
-    <meta name="author" content="Mika van Os" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Home page</title>
-    <link rel="stylesheet" href="css/base.css" type="text/css" />
-    <link rel="stylesheet" href="css/profile.css" type="text/css" />
-</head>
+@extends('layouts.main')
 
-<body>
-<script src="nav.js"></script>
-<div id="navigation" class="header">
-    <div class="logoDiv">
-        <a target="_blank" href="https://www.suunn.nl"
-        ><img class="logo" src="https://suunn.nl/images/r2d2.png"
-            /></a>
-    </div>
-    <nav>
-        <a class="inactive" href="index.html">Home page</a>
-        <a class="active" href="profile.html">About me</a>
-        <a class="inactive" href="blog_home.html">Blog</a>
-        <a class="inactive" href="faq.html">FAQ</a>
-        <a class="inactive" href="dashboard.html">Dashboard</a>
-    </nav>
-</div>
-<main>
+@section('title', 'About Me')
+
+@section('css')
+    @vite(['resources/css/profile.css'])
+    @endsection
+
+@section('content')
     <section>
         <div class="articles">
             <div class="toddler">
@@ -182,6 +161,5 @@
             </article>
         </div>
     </section>
-</main>
-</body>
-</html>
+
+@endsection

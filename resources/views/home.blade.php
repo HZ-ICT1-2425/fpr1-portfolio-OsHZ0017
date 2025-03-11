@@ -1,4 +1,12 @@
-<x-layout.main title="Home Page">
+@extends('layouts.main')
+
+@section('title', 'Home Page')
+
+@section('css')
+    @vite('resources/css/index.css')
+    @endsection
+
+@section('content')
     <section>
         <aside>
             <div class="aside">
@@ -185,4 +193,4 @@
             </article>
         </div>
     </section>
-</x-layout.main>
+@endsection

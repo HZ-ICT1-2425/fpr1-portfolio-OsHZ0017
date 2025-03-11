@@ -12,7 +12,8 @@ export default defineConfig({
                 'resources/css/dashboard.css',
                 'resources/css/blog.css',
                 // JS Files
-                'resources/js/app.js'],
+                'resources/js/app.js',
+                'resources/js/gradePass.js'],
             refresh: true,
         }),
     ],
