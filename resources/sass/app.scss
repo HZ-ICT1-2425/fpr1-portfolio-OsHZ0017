@@ -1,17 +1,17 @@
 // Define project theme colors
-$hz-background : #0078cc;
-$purple: #8a4d76;
-$pink: #fa7c91;
+$aside-color : #ddb967;
+$article-color: rgba(96, 55, 98, 0.77);
+$blue-backdrop: rgba(41, 39, 82, 0.71);
 $brown: #757763;
 $beige-light: #d0d1cd;
 $beige-lighter: #eff0eb;
 
 // Path to Bulma's sass folder
 @use "bulma/sass" with (
-  $family-primary: '"Roboto", sans-serif',
+  $family-primary: '"Handjet", sans-serif',
   $grey-dark: $brown,
   $grey-light: $beige-light,
-  $primary: $hz-background,
+  $primary: $blue-backdrop,
 );
 
 // Font Awesome
@@ -19,5 +19,5 @@ $beige-lighter: #eff0eb;
 
 // Typography. You can use any font here, but for demonstration purposes, we use some nice Google font
 // (check https://fonts.google.com/ for fonts)
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
 

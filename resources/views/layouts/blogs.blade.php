@@ -9,12 +9,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>@yield('title')</title>
 
-    @vite(['resources/css/base.css', 'resources/css/blog.css'])
+    @vite([ 'resources/sass/app.scss', 'resources/css/base.css', 'resources/css/blog.css'])
 
 </head>
 
 <body>
-<x-ui.header/>
+<x-ui.header :request="URL::current()"/>
 <main>
     @yield('content')
 </main>

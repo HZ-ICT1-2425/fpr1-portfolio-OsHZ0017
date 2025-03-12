@@ -58,7 +58,6 @@ body {
     overflow-y: scroll;
     color: #ffffff;
     background-color: black;
-    font-family: "Courier New", Courier, monospace;
     background-image: url("/storage/app/public/space.jpg");
     background-position: 0%;
     background-attachment: fixed;
@@ -83,7 +82,7 @@ section {
     display: inline-flex;
 }
 
-article {
+.box {
     width: auto;
     text-align: center;
     background-color: #603762c5;
@@ -106,13 +105,7 @@ h2 {
     text-align: center;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-summary {
+.title {
     color: #ddb967;
     text-shadow: 2px 2px black;
 }
@@ -135,11 +128,10 @@ a:hover {
     text-decoration: underline;
 }
 
-button {
+.button {
     background-color: #07004d;
     color: white;
     padding: 10px;
-    font-family: monospace;
     text-align: center;
     cursor: pointer;
 }

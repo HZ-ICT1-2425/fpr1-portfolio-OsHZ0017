@@ -79,8 +79,7 @@ class BlogSeeder extends Seeder
             'title' => 'Programming Experience',
             'excerpt' => 'Personally, I haven’t got a lot of experience in the
                     world of coding. I’ve had my funks of curiosity,
-                    exploring pages like
-                    <a href="http://www.code.org">code.org</a> and
+                    exploring pages like code.org and
                     similar, but I’ve never sunk my teeth into any sort
                     of major projects or languages beyond HTML and CSS.',
             'body' => '<p>

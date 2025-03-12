@@ -57,8 +57,8 @@
             </div>
         </aside>
         <div class="articles">
-            <h1>The curious will learn.</h1>
-            <article>
+            <h1 class="title is-1">The curious will learn.</h1>
+            <div class="box">
                 <h3>
                     You are here, so you know
                     <abbr title="Mika :3">who</abbr> this website
@@ -85,9 +85,9 @@
                     afraid I would permanently damage something. Which
                     honestly, I would have.
                 </p>
-            </article>
-            <article style="text-align: left">
-                <h4 style="padding-left: 20px">
+            </div>
+            <div class="box">
+                <h4 class="title is-5">
                     I think the IT course is a good fit for me because:
                 </h4>
                 <ul>
@@ -109,8 +109,8 @@
                         fun
                     </li>
                 </ul>
-            </article>
-            <article>
+            </div>
+            <div class="box">
                 <p>
                     Now that I have become older and have my own money
                     and a frontal lobe more capable of reasonable
@@ -130,41 +130,41 @@
                     I hope all of you are just as excited as I am to go
                     into this year and start learning!
                 </p>
-            </article>
-            <article>
-                <h3>Intrinsic Motivation</h3>
-                <p>
+            </div>
+            <div class="box">
+                <h3 class="title is-3">Intrinsic Motivation</h3>
+                <h3 class="subtitle is-6 is-spaced">
                     Though, if you find yourself even
                     <strong>more</strong> curious about my actual
                     motivation for the programme, here is a little
                     exercise we were offered in Lecture. I will be
                     answering "Why ICT?" a few times.
-                </p>
-                <h5>So, Why ICT?</h5>
-                <p
+                </h3>
+                <h5 class="title is-6">So, Why ICT?</h5>
+                <p class="subtitle is-6"
                 >Because computers have always seemed interesting to
                     me.</p
                 >
-                <h5>But why do computers seem interesting?</h5>
-                <p>
+                <h5 class="title is-6">But why do computers seem interesting?</h5>
+                <p class="subtitle is-6">
                     Because they seem magic, but actually work on logic
                     and I want to learn to understand that.
                 </p>
-                <h5>But why do you want to understand that logic?</h5>
-                <p>
+                <h5 class="title is-6">But why do you want to understand that logic?</h5>
+                <p class="subtitle is-6">
                     Because not very many people are able to, and I
                     would feel really cool if I could.
                 </p>
-                <h5>But why would it make you feel cool?</h5>
-                <p>
+                <h5 class="title is-6">But why would it make you feel cool?</h5>
+                <p class="subtitle is-6">
                     Because I would feel really proud of myself for
                     learning something so complex. It would be like
                     speaking another language to me.
                 </p>
-                <h4>Incredible pride, it satiates curiousity.</h4>
-            </article>
-            <article>
-                <h3>Previous project</h3>
+                <h4 class="is-size-4">Incredible pride, it satiates curiousity.</h4>
+            </div>
+            <div class="box">
+                <h3 class="title is-3">Previous project</h3>
                 <p>
                     I have previously worked on
                     <a href="https://suunn.nl"> a website</a> before,
@@ -190,7 +190,7 @@
                     class="suunn"
                     alt="A picture of the Star Wars page of the website suunn.nl"
                 />
-            </article>
+            </div>
         </div>
     </section>
 @endsection

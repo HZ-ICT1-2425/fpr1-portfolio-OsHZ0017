@@ -5,7 +5,6 @@
             base website."/>
         </a>
     </div>
-    <x-ui.navbar>
-    </x-ui.navbar>
+    <x-ui.bar :request="$request"/>
 </div>
 
