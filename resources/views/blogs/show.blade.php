@@ -4,7 +4,7 @@
 
 @section('content')
     <section>
-        <article>
+        <div class="box">
     <h1>{{ $blog->title }}</h1>
     <h4>
         {!! $blog->excerpt !!}
@@ -13,6 +13,6 @@
     <div>
     {!! $blog->body !!}
     </div>
-        </article>
+        </div>
     </section>
     @endsection
