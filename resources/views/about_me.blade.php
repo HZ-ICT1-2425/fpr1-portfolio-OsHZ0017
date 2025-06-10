@@ -4,7 +4,7 @@
 
 @section('css')
     @vite(['resources/css/profile.css'])
-    @endsection
+@endsection
 
 @section('content')
     <section>
@@ -25,7 +25,7 @@
                 <p>
                     My name is Mika, I am a 21 year old guy and have
                     been living in Zeeland for the majority of my
-                    life.<br />I live with both my parents, and a
+                    life.<br/>I live with both my parents, and a
                     younger sibling. There is a year and a half between
                     her and me.
                 </p>
@@ -133,16 +133,16 @@
                         href="https://github.com/Os773"
                         target="_blank"
                     >Github</a
-                    ><br />
+                    ><br/>
                     <a
                         href="https://www.linkedin.com/in/mika-v-953860199/"
                         target="_blank"
                     >LinkedIn</a
-                    ><br /><a
+                    ><br/><a
                         href="https://www.instagram.com/unapologetically.mika/"
                         target="_blank"
                     >Instagram</a
-                    ><br />
+                    ><br/>
                     <a
                         href="https://snapchat.com/t/jd1SSJRq"
                         target="_blank"
@@ -152,12 +152,21 @@
             </article>
             <article>
                 <h4>Some further HTML projects</h4>
-                <p>Outside of coding for school, I occasionally meddle with html and css for a website called <a href="https://toyhou.se/">"Toyhou.se"</a>. <br>
-                    This is a website that allows you to list original characters you've made, and display/collect art and information about them. Additionally, you can customize their pages with custom HTML and CSS!<br>
-                    The Toyhouse website is built on a grid that I don't know the layout of yet, but is still very neat to work with in my personal opinion.</p>
-                <p>The first project I made on this was for a character named <a href="https://toyhou.se/28603335.crowbar">Crowbar</a>, the code for his layout was taken from someone else but it had a LOT of inline CSS.<br>
-                    I spent a day taking out all the inline CSS and rebuilding the page with a proper backend, as well as changing the theming to be more in line with the videogame <a href="https://en.wikipedia.org/wiki/Pathologic">Pathologic</a>.<br>
-                    Now he's looking much fancier, and I made a bunch of other people very happy with this code, too.</p>
+                <p>Outside of coding for school, I occasionally meddle with html and css for a website called <a
+                        href="https://toyhou.se/">"Toyhou.se"</a>. <br>
+                    This is a website that allows you to list original characters you've made, and display/collect art
+                    and information about them. Additionally, you can customize their pages with custom HTML and
+                    CSS!<br>
+                    The Toyhouse website is built on a grid that I don't know the layout of yet, but is still very neat
+                    to work with in my personal opinion.</p>
+                <p>The first project I made on this was for a character named <a
+                        href="https://toyhou.se/28603335.crowbar">Crowbar</a>, the code for his layout was taken from
+                    someone else but it had a LOT of inline CSS.<br>
+                    I spent a day taking out all the inline CSS and rebuilding the page with a proper backend, as well
+                    as changing the theming to be more in line with the videogame <a
+                        href="https://en.wikipedia.org/wiki/Pathologic">Pathologic</a>.<br>
+                    Now he's looking much fancier, and I made a bunch of other people very happy with this code, too.
+                </p>
             </article>
         </div>
     </section>

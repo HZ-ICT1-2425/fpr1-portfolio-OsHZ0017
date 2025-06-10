@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Dashboard Page')
+@section('title', 'Homepage')
 
 @section('css')
     @vite('resources/css/index.css')
