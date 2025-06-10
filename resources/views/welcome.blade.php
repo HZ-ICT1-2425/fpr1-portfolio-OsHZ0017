@@ -1,138 +1,196 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.main')
 
-    <title>HZ HBO-ICT</title>
+@section('title', 'Dashboard Page')
 
-    {{-- Compiled assets --}}
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
-</head>
-<body>
-{{-- Navigation bar --}}
-<nav class="navbar is-primary  has-text-white" >
-    <div class="container">
-        <div class="navbar-brand">
-            <a href="/" class="navbar-item">
-                <strong><i class="fas fa-graduation-cap"></i> HZ</strong>
-            </a>
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div class="navbar-menu" id="navMenu">
-            <div class="navbar-start">
-                <a href="{{ route('home') }}"
-                   class="navbar-item {{ Request::route()->getName() === 'home' ? "is-active" : "" }}">
-                    Home
-                </a>
+@section('css')
+    @vite('resources/css/index.css')
+    @endsection
+
+@section('content')
+    <section>
+        <aside>
+            <div class="aside">
+                <h4>Useful Links</h4>
+                <ul>
+                    <li>
+                        <a
+                            target="_blank"
+                            href="https://oer.hz.nl/a37f2fd2-8b35-44ce-800a-c5abe33735aa"
+                        >HBO-ICT Course and Examination
+                            regulations</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            target="_blank"
+                            href="https://oer.hz.nl/6978cdea-fb31-430b-9bf9-63206aa07754"
+                        >HBO-ICT Implementation Regulations</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            target="_blank"
+                            href="https://glaze-donut-5a5.notion.site/PCO1en-Your-Showcase-Website-7bc8c340f66047d0b49b83e8dc44ba23"
+                        >PCO1en Showcase Website</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            target="_blank"
+                            href="https://hz.osiris-student.nl/voortgang"
+                        >Course progress</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            target="_blank"
+                            href="https://github.com/HZ-HBO-ICT"
+                        >HBO-ICT Github environment</a
+                        >
+                    </li>
+                </ul>
+                <h4>Future plans</h4>
+                <p>If possible, I would like to add more scripts to this website.<br>
+                    Mainly a scrip to automate the navigation bar, but also just in general to make things work smarter.<br>
+                    I also intend to rewrite the script behind the dashboard calculations. It works, but I believe it can be made smarter and more efficient.<br>
+                    Also, don't tell anyone, but it's a little broken right now. I will repair it when I can find some mental space to, but repairing it comes with upgrading it, too.</p>
+            </div>
+        </aside>
+        <div class="articles">
+            <h1 class="title is-1">Please help me oh god.</h1>
+            <div class="box">
+                <h3>
+                    You are here, so you know
+                    <abbr title="Mika :3">who</abbr> this website
+                    belongs to.
+                </h3>
+                <p>
+                    I think I am ready to be a part of this programme.
+                    To learn more about the things that make me curious
+                    and actually learn to understand and create in this
+                    field of work.
+                </p>
+                <p>
+                    From as young as I have been aware of computers, I
+                    have been curious about how their internal
+                    mechanisms function. As a younger child we did not
+                    exactly have a computer at home on which I was
+                    allowed to experiment, but I remember begging my
+                    father to let me install minecraft mods. He did,
+                    however, let me do classes and projects on
+                    <a href="https://code.org/">Code.org</a>
+                </p>
+                <p>
+                    He never let me install those mods though, too
+                    afraid I would permanently damage something. Which
+                    honestly, I would have.
+                </p>
+            </div>
+            <div class="box">
+                <h4 class="title is-5">
+                    I think the IT course is a good fit for me because:
+                </h4>
+                <ul>
+                    <li
+                    >It is a lot of impromptu problem solving, which
+                        I love</li
+                    >
+                    <li>
+                        It is a lot of project work, which I think is a
+                        fun challenge
+                    </li>
+                    <li>
+                        It is sometimes out of the box thinking, which
+                        can be silly and very fun
+                    </li>
+                    <li>
+                        It is a lot of structuring and design, learning
+                        what is intuitive and how to do things best is
+                        fun
+                    </li>
+                </ul>
+            </div>
+            <div class="box">
+                <p>
+                    Now that I have become older and have my own money
+                    and a frontal lobe more capable of reasonable
+                    decisions, I am allowed to start and experiment. I
+                    am excited to learn things I did not know before,
+                    and I look forward an incredible amount to learning
+                    all about these languages that I have heard of, but
+                    never learnt to read.
+                </p>
+                <p>
+                    I especially look forward to learning JavaScript.
+                    Perhaps in the future I will be creating what I was
+                    so curious about, a Minecraft mod! If ever I come up
+                    with an idea decent enough.
+                </p>
+                <p>
+                    I hope all of you are just as excited as I am to go
+                    into this year and start learning!
+                </p>
+            </div>
+            <div class="box">
+                <h3 class="title is-3">Intrinsic Motivation</h3>
+                <h3 class="subtitle is-6 is-spaced">
+                    Though, if you find yourself even
+                    <strong>more</strong> curious about my actual
+                    motivation for the programme, here is a little
+                    exercise we were offered in Lecture. I will be
+                    answering "Why ICT?" a few times.
+                </h3>
+                <h5 class="title is-6">So, Why ICT?</h5>
+                <p class="subtitle is-6"
+                >Because computers have always seemed interesting to
+                    me.</p
+                >
+                <h5 class="title is-6">But why do computers seem interesting?</h5>
+                <p class="subtitle is-6">
+                    Because they seem magic, but actually work on logic
+                    and I want to learn to understand that.
+                </p>
+                <h5 class="title is-6">But why do you want to understand that logic?</h5>
+                <p class="subtitle is-6">
+                    Because not very many people are able to, and I
+                    would feel really cool if I could.
+                </p>
+                <h5 class="title is-6">But why would it make you feel cool?</h5>
+                <p class="subtitle is-6">
+                    Because I would feel really proud of myself for
+                    learning something so complex. It would be like
+                    speaking another language to me.
+                </p>
+                <h4 class="is-size-4">Incredible pride, it satiates curiousity.</h4>
+            </div>
+            <div class="box">
+                <h3 class="title is-3">Previous project</h3>
+                <p>
+                    I have previously worked on
+                    <a href="https://suunn.nl"> a website</a> before,
+                    though the intention of this prevous site was to
+                    look both retro and intentionally awful.
+                </p>
+                <p>
+                    I cannot claim I have grown a
+                    <strong>lot</strong> since then, but maybe a little?
+                </p>
+                <img
+                    src="{{ url('storage/suunn1.png') }}"
+                    class="suunn"
+                    alt="A picture of the home screen of the website suunn.nl"
+                />
+                <img
+                    src="{{ url('storage/suunn2.png') }}"
+                    class="suunn"
+                    alt="A picture of the 'hell' page of the website suunn.nl"
+                />
+                <img
+                    src="{{ url('storage/suunn3.png') }}"
+                    class="suunn"
+                    alt="A picture of the Star Wars page of the website suunn.nl"
+                />
             </div>
         </div>
-    </div>
-</nav>
-
-{{-- Content --}}
-<section class="hero  is-medium  is-bold is-primary">
-    <div class="hero-body" style="
-            background: url('https://www.hz.nl/imager/uploads/images/3.-Werk-en-studie/Headers/docent-coacht-studenten-003_c8fa470484be7b69be5daae77a1602c5.jpg') no-repeat center center;
-            background-size: cover;"
-    ></div>
-</section>
-
-<section class="section">
-    <div class="container">
-        <div class="columns">
-
-            <div class="column is-8-desktop is-12-tablet">
-
-                <div class="content">
-                    <h1>Welcome to the HZ HBO-ICT template app.</h1>
-                    <p>
-                        Posuere porttitor natoque velit duis penatibus fermentum dignissim ut? Vel vel mi purus
-                        tempor nec conubia platea venenatis. Mauris pharetra auctor magnis, vehicula integer risus
-                        taciti gravida semper fames! Eu fermentum lorem accumsan litora. Consequat dapibus interdum
-                        primis lorem. Convallis integer mi suscipit tempor. Ad tincidunt placerat at. Sagittis
-                        pulvinar consectetur commodo, placerat varius sociosqu egestas felis! Curae; dictumst porta
-                        tempus. Nisi nec morbi netus euismod egestas proin sed tempor. Nam feugiat ante ante.
-                        Conubia vehicula tincidunt facilisis quisque risus senectus convallis. Eget at feugiat vel
-                        nisi. Tortor, facilisis neque elementum ultricies blandit amet orci dictumst eu mi molestie.
-                        Libero vulputate porta proin volutpat suspendisse aenean aenean facilisi ut primis!
-                        Venenatis elementum auctor neque urna et facilisis vulputate erat lorem habitasse libero!
-                        Risus ornare quam rutrum praesent blandit congue aliquet mauris.
-                    </p>
-                    <p>
-                        Elementum orci eget vel adipiscing tempor malesuada? Sollicitudin euismod nunc feugiat
-                        accumsan accumsan condimentum nulla pellentesque sagittis habitasse suspendisse praesent?
-                        Lectus proin justo vulputate tristique duis metus, est pellentesque blandit quam pharetra.
-                        Maecenas tincidunt litora mauris mollis ornare dictum nec placerat lectus massa lobortis
-                        auctor. Hac feugiat dolor, ac ridiculus mi adipiscing aptent elementum suspendisse augue
-                        rutrum! Habitasse a consequat ornare dictumst integer dis porta.
-                    </p>
-                    <p>
-                        Blandit mollis felis gravida sem ad venenatis ut a lacus! Magna odio netus, torquent rhoncus
-                        fames velit. Adipiscing libero, class cursus ipsum penatibus enim mollis netus. Sociis
-                        luctus eros sapien platea parturient fringilla. Senectus purus tincidunt laoreet purus
-                        praesent. Accumsan pulvinar tincidunt gravida malesuada senectus proin, elit cubilia
-                        lobortis quisque tellus? Torquent dis natoque sapien natoque sagittis conubia pulvinar risus
-                        elementum hac adipiscing arcu. Sem nisl fusce phasellus adipiscing pretium eget hendrerit
-                        proin non. Vestibulum lacus magna, commodo volutpat.
-                    </p>
-                    <p>
-                        Vivamus ridiculus amet arcu. Magnis venenatis vehicula venenatis molestie molestie proin sed
-                        blandit, inceptos volutpat. Auctor auctor massa sodales ipsum. Congue est quisque porta?
-                        Porta phasellus sem torquent ad feugiat sollicitudin nisi tempor tortor habitasse. Eros
-                        condimentum enim blandit pulvinar. Justo aenean, taciti curae; diam volutpat cubilia ante
-                        vestibulum. Augue penatibus phasellus inceptos tortor convallis ridiculus at ad. Nisl
-                        curabitur vel gravida, montes sit velit pellentesque. Sem, dapibus maecenas urna lectus
-                        mauris quisque nibh accumsan amet curabitur egestas dolor. Sagittis montes magnis quam
-                        fringilla accumsan bibendum. Nisl, a laoreet himenaeos sapien lorem quisque taciti lacus
-                        elit mauris. Mollis eleifend montes commodo? Accumsan nullam venenatis malesuada netus metus
-                        sociosqu magnis velit. Rhoncus lacus tempus praesent fermentum netus ullamcorper dolor
-                        integer nulla.
-                    </p>
-                    <p>
-                        Habitasse suspendisse egestas vestibulum pellentesque per leo enim metus donec ad. Hac metus
-                        convallis nibh eget, parturient dis elementum posuere. Felis, ultricies fusce est cubilia
-                        facilisis odio id velit dapibus suspendisse. Erat praesent nullam aliquam. Rutrum commodo
-                        eget malesuada per montes, curae; senectus convallis sociis per. Risus mattis justo vivamus
-                        lorem bibendum aenean eleifend facilisi, suscipit consectetur libero litora. Interdum?
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-{{-- Footer --}}
-<footer class="footer">
-    <div class="container">
-        <div class="columns is-multiline">
-
-            <div class="column has-text-centered">
-                <div>
-                    <a href="/" class="link">Home</a>
-                </div>
-            </div>
-
-            <div class="column has-text-centered">
-                <div>
-                    <a href="https://opensource.org/licenses/MIT" class="link">
-                        <i class="fa fa-balance-scale" aria-hidden="true"></i> License: MIT
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="content is-small has-text-centered">
-            <p class="">Theme built by <a href="https://www.csrhymes.com">C.S. Rhymes</a> | adapted by <a href="https://github.com/dwaard">BugSlayer</a></p>
-            <p>PROJECT FOOTER HERE</p>
-        </div>
-    </div>
-</footer>
-
-</body>
-</html>
+    </section>
+@endsection
