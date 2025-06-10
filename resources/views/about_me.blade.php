@@ -66,7 +66,7 @@
                 <dl style="text-align: left">
                     <dt>Playing games</dt>
                     <dd>
-                        I mainly have interest in the rythm game OSU!,
+                        I mainly have interest in the rhythm game OSU!,
                         but occasionally play factory builders like
                         Shapez.io and simpler games such as Minecraft,
                         too. I also have a VR headset which I enjoy
@@ -130,7 +130,7 @@
                 </p>
                 <div class="social-media">
                     <a
-                        href="https://github.com/OsHZ0017"
+                        href="https://github.com/Os773"
                         target="_blank"
                     >Github</a
                     ><br />

@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Home Page')
+@section('title', 'Dashboard Page')
 
 @section('css')
     @vite('resources/css/index.css')
@@ -57,7 +57,7 @@
             </div>
         </aside>
         <div class="articles">
-            <h1 class="title is-1">The curious will learn.</h1>
+            <h1 class="title is-1">Please help me oh god.</h1>
             <div class="box">
                 <h3>
                     You are here, so you know
