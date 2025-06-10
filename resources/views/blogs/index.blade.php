@@ -6,7 +6,7 @@
     <section>
         <aside class="blog-menu blog-menu-div">
            @foreach($blogs as $blog)
-                <a href="{{ route('blogs.show', ['blog' => $blog]) }}">
+                <a class="m-2" href="{{ route('blogs.show', ['blog' => $blog]) }}">
                     <h4>{{ $blog->title }}</h4>
                 </a>
                @endforeach

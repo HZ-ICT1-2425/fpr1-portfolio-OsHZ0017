@@ -8,7 +8,7 @@ function navigationMenu() {
         menuElement.push(button);
     }
 
-    menuElement[0].innerHTML = '<a href="/resources/views/home.blade.php">Home page</a>';
+    menuElement[0].innerHTML = '<a href="/resources/views/welcome.blade.php">Home page</a>';
     menuElement[1].innerHTML = '<a href="/resources/views/about_me.blade.php">About me</a>';
     menuElement[2].innerHTML = '<a href="/resources/views/faq.blade.php">FAQ</a>';
     menuElement[4].innerHTML = '<a href="/resources/views/dashboard.blade.php">Dashboard</a>';
