@@ -4,9 +4,17 @@
 
 @section('css')
     @vite('resources/css/index.css')
-    @endsection
+@endsection
 
 @section('content')
+    <div class="flex flex-row justify-center">
+        <div>
+            <a href="{{route('500')}}">
+                <button class="bg-red-500 rounded p-2 m-2 text-white" title="Want to see a 500 error?">Big red evil
+                    button</button>
+            </a>
+        </div>
+    </div>
     <section>
         <aside>
             <div class="aside">
@@ -52,8 +60,10 @@
                 <h4>Future plans</h4>
                 <p>If possible, I would like to add more scripts to this website.<br>
                     Mainly a scrip to automate the navigation bar, but also just in general to make things work smarter.<br>
-                    I also intend to rewrite the script behind the dashboard calculations. It works, but I believe it can be made smarter and more efficient.<br>
-                    Also, don't tell anyone, but it's a little broken right now. I will repair it when I can find some mental space to, but repairing it comes with upgrading it, too.</p>
+                    I also intend to rewrite the script behind the dashboard calculations. It works, but I believe it
+                    can be made smarter and more efficient.<br>
+                    Also, don't tell anyone, but it's a little broken right now. I will repair it when I can find some
+                    mental space to, but repairing it comes with upgrading it, too.</p>
             </div>
         </aside>
         <div class="articles">
@@ -93,7 +103,8 @@
                 <ul>
                     <li
                     >It is a lot of impromptu problem solving, which
-                        I love</li
+                        I love
+                    </li
                     >
                     <li>
                         It is a lot of project work, which I think is a

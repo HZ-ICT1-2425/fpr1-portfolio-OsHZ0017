@@ -1,84 +1,13 @@
 {
-  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf": {
-    "file": "assets/fa-brands-400-D1LuMI3I.ttf",
-    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf"
-  },
-  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2": {
-    "file": "assets/fa-brands-400-D_cYUPeE.woff2",
-    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2"
-  },
-  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf": {
-    "file": "assets/fa-regular-400-DZaxPHgR.ttf",
-    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf"
-  },
-  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2": {
-    "file": "assets/fa-regular-400-BjRzuEpd.woff2",
-    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2"
-  },
-  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf": {
-    "file": "assets/fa-solid-900-D0aA9rwL.ttf",
-    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf"
-  },
-  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2": {
-    "file": "assets/fa-solid-900-CTAAxXor.woff2",
-    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2"
-  },
-  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.ttf": {
-    "file": "assets/fa-v4compatibility-CCth-dXg.ttf",
-    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.ttf"
-  },
-  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.woff2": {
-    "file": "assets/fa-v4compatibility-C9RhG_FT.woff2",
-    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.woff2"
-  },
-  "resources/css/base.css": {
-    "file": "assets/base-B5zj9Bo5.css",
-    "src": "resources/css/base.css",
-    "isEntry": true
-  },
-  "resources/css/blog.css": {
-    "file": "assets/blog-D4M38dhX.css",
-    "src": "resources/css/blog.css",
-    "isEntry": true
-  },
-  "resources/css/dashboard.css": {
-    "file": "assets/dashboard-Cr0mT9u1.css",
-    "src": "resources/css/dashboard.css",
-    "isEntry": true
-  },
-  "resources/css/index.css": {
-    "file": "assets/index-DXzDewSz.css",
-    "src": "resources/css/index.css",
-    "isEntry": true
-  },
-  "resources/css/profile.css": {
-    "file": "assets/profile-A9KkzUep.css",
-    "src": "resources/css/profile.css",
+  "resources/css/app.css": {
+    "file": "assets/app-DAzqNzAh.css",
+    "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-Xaw6OIO1.js",
+    "file": "assets/app-Bf4POITK.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true
-  },
-  "resources/js/gradePass.js": {
-    "file": "assets/gradePass-l0sNRNKZ.js",
-    "name": "gradePass",
-    "src": "resources/js/gradePass.js",
-    "isEntry": true
-  },
-  "resources/sass/app.scss": {
-    "file": "assets/app-CrGfskHu.css",
-    "src": "resources/sass/app.scss",
-    "isEntry": true
-  },
-  "storage/app/public/mika.png": {
-    "file": "assets/mika-vLo3YECR.png",
-    "src": "storage/app/public/mika.png"
-  },
-  "storage/app/public/space.jpg": {
-    "file": "assets/space-BfQKQ75a.jpg",
-    "src": "storage/app/public/space.jpg"
   }
 }

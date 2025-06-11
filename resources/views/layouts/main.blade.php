@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>@yield('title')</title>
 
-    @vite([ 'resources/sass/app.scss','resources/css/base.css'])
+    @vite([ 'resources/sass/app.scss','resources/css/app.css'])
     @yield('css')
 
     @yield('head')
