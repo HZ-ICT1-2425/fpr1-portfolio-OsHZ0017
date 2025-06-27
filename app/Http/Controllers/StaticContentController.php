@@ -9,7 +9,7 @@ class StaticContentController extends Controller
 //    Returns the HomePage for the Project
     public function homePage()
     {
-        return view('home');
+        return view('welcome');
     }
 
 //    Returnst the About Page for the Project
