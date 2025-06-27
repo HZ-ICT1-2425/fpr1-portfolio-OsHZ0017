@@ -16,10 +16,6 @@ services:
     working_dir: /var/www/html
     command: >
       bash -c "
-        until mysqladmin ping -h'mysql' --silent; do
-          echo 'Waiting for MySQL...';
-          sleep 2;
-        done &&
         composer install &&
         php artisan config:clear &&
         if [ ! -f .env ]; then cp .env.example .env && php artisan key:generate; fi &&
